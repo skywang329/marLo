@@ -55,6 +55,7 @@ if os.getenv("MARLO_ENVS_DIRECTORY") is not None:
     # This environment variable expects a list of directories 
     # which contain marlo compatible env definitions
     MARLO_ENV_PATHS += os.getenv("MARLO_ENVS_DIRECTORY").split(":")
+
 register_environments(MARLO_ENV_PATHS)
 ########################################################################
 # Register Envs Complete
